@@ -46,7 +46,7 @@ Trích xuất log tiêu biểu từ file `docs/trace_waterfall.json` — kịch 
         "advisor": "PGS.TS Nguyễn Văn A"
       }
     },
-    "latency_ms": 0.0
+    "latency_ms": 5681.16
   },
   {
     "step": 2,
@@ -74,7 +74,7 @@ Trích xuất log tiêu biểu từ file `docs/trace_waterfall.json` — kịch 
       "advisor": "PGS.TS Nguyễn Văn A",
       "message": "Đặt lịch thành công cho sinh viên SV2026001 với PGS.TS Nguyễn Văn A vào lúc 14:00 15/09/2026."
     },
-    "latency_ms": 0.0
+    "latency_ms": 2047.83
   },
   {
     "step": 2,
@@ -103,10 +103,11 @@ Trích xuất log tiêu biểu từ file `docs/trace_waterfall.json` — kịch 
 
 ## 3. TỔNG KẾT KẾT QUẢ NGHIỆM THU & NỘP BÀI
 
-- [x] Đã điền API Key (`GEMINI_API_KEY`) trong `.env` và xác nhận Agent khởi tạo thành công với `GeminiProvider`.
+- [x] Đã điền API Key (`GEMINI_API_KEY`) trong `.env` và xác nhận Agent khởi tạo thành công với `GeminiProvider` (model: `gemini-2.5-flash`).
 - **Tổng số Test Cases đã chạy thành công:** **5 / 5 test cases.**
 - **Số lượt gọi Tool qua MCP Server chính xác:** **5 lượt** (TC02×1, TC03×1, TC04×1, TC05×1 + TC01×0).
 - **Tổng số sự kiện ghi trong Waterfall Trace Log:** **9 sự kiện** (`docs/trace_waterfall.json`).
+- **Latency thực tế từ Gemini API:** TC01=11098ms, TC02=5681ms, TC03=2047ms, TC04=2388ms, TC05=3653ms.
 - **Kết quả đẩy Repo nộp bài:** [x] Đã Commit và Push mã nguồn thành công lên GitHub cá nhân.
 
 ---
